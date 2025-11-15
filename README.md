@@ -3,7 +3,7 @@ A shared AGENTS.md convention for clear, versionable documentation of AI agents 
 
 ---
 
-English follows  
+English follows.  
 
 ## Introduction
 시그모이드 프로젝트 진행 시 공통적으로 사용하는 AGENTS.md 문서의 표준 양식입니다.  
