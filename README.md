@@ -18,11 +18,7 @@ This is the standard AGENTS.md template commonly used during Sigmoid projects. M
 ## Files
 - `korean.md`: 한국어 지침 / Korean instructions
 - `english.md`: 영어 번역본 / English translation
-- `LICENSE`: MIT License
-
-## Growing the repo
-현재는 지침 원문과 라이선스만 포함되어 있습니다. 필요에 따라 examples/, frameworks/, languages/ 등의 디렉터리를 추가해 조각화된 지침을 보관할 수 있습니다.
-At present only the instruction texts and license are included. Add directories such as examples/, frameworks/, or languages/ if you need to store modular instructions.
+- `LICENSE`: Apache 2.0 License
 
 ## LICENSE
 본 레포지토리는 MIT 라이선스를 따릅니다. 또한, 많은 사용자들의 기여를 환영합니다.
