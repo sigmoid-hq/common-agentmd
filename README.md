@@ -1,29 +1,29 @@
 # common-agentmd
-A shared AGENTS.md convention for clear, versionable documentation of AI agents across multiple scenarios, projects.
+A shared AGENTS.md convention for clear, versionable documentation of AI agents across multiple scenarios and projects.
 
 ---
 
-English follows.  
+## Purpose
+시그모이드 프로젝트 진행 시 공통적으로 사용하는 AGENTS.md 문서의 표준 양식입니다. 각 프로젝트의 요구사항에 맞춰 조합하여 사용하세요.
+This is the standard AGENTS.md template commonly used during Sigmoid projects. Mix and match it to fit each project.
 
-## Introduction
-시그모이드 프로젝트 진행 시 공통적으로 사용하는 AGENTS.md 문서의 표준 양식입니다.  
-AGENTS.md 파일의 내용을 각 프로젝트에 맞게 조합하여 사용하시기 바랍니다.  
-This is the standard template for the AGENTS.md document commonly used during Sigmoid project development.  
-Please adapt the contents of the AGENTS.md file to suit each specific project.  
+## Usage
+- 기본 언어를 정하고 `korean.md` 또는 `english.md`에서 필요한 지침을 복사해 AGENTS.md를 작성합니다.
+  Choose your base language and copy the needed instructions from `korean.md` or `english.md` into your AGENTS.md.
+- 프레임워크나 언어별로 필요한 섹션만 선택해 프로젝트에 맞게 수정합니다.
+  Select only the framework- or language-specific sections you need and adapt them to the project.
+- 새 프로젝트마다 AGENTS.md를 리포지토리 루트에 두어 버전 관리합니다.
+  Keep AGENTS.md in the repository root for each project and version it.
 
-## Structures
-본 레포지토리의 구조입니다. 프레임워크, 언어 별로 분리해두었습니다.  
-This is the structure of this repository. It is separated by framework and language.  
-```
-- common-agentmd/
-  |- examples/
-  |- frameworks/
-  |- languages/
-  - README.md
-```
+## Files
+- `korean.md`: 한국어 지침 / Korean instructions
+- `english.md`: 영어 번역본 / English translation
+- `LICENSE`: MIT License
+
+## Growing the repo
+현재는 지침 원문과 라이선스만 포함되어 있습니다. 필요에 따라 examples/, frameworks/, languages/ 등의 디렉터리를 추가해 조각화된 지침을 보관할 수 있습니다.
+At present only the instruction texts and license are included. Add directories such as examples/, frameworks/, or languages/ if you need to store modular instructions.
 
 ## LICENSE
-본 레포지토리는 MIT 라이선스를 따릅니다.  
-또한, 많은 사용자들의 기여를 환영합니다.  
-This repository is licensed under the MIT License.  
-We also welcome contributions from many users.  
+본 레포지토리는 MIT 라이선스를 따릅니다. 또한, 많은 사용자들의 기여를 환영합니다.
+This repository is licensed under the MIT License. Contributions are welcome.
