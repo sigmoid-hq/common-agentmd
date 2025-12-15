@@ -15,6 +15,18 @@
 - Direct edits are allowed only for non-sensitive tasks such as adding run scripts or setting name, version, or author.
 - Run code in the form yarn <script>.
 - Set tab size to 4.
+- Use alias imports mapped to the src/ root with `@/`.
+    - E.g., `@/modules/...`, `@/common/...`, `@/config/...`
+- Use alias imports when referencing across module boundaries (different modules/layers).
+    - E.g., `@/modules/user/user.module`
+- Allow relative paths for referencing files within the same module (or feature directory).
+    - E.g., `./dto/create-user.dto`, `../entities/user.entity`
+- Avoid excessive use of `index.ts` barrel exports with alias imports.
+    - Use them sparingly when necessary; prefer explicit imports by default.
+- When mixing alias imports and relative paths, follow these guidelines:
+    - External (between modules/layers): Alias
+    - Internal (within the same module/feature): Relative paths
+- Module dependencies should be explicit and avoid circular references.
 
 ### Python / UV
 - Use uv as the package manager.
@@ -87,3 +99,12 @@
 ### Cloud part (in progress)
 - Use snake_case by default, preferring _ over -.
 - Separate dev/staging/prod environments.
+
+## Agent Behavior Rules
+
+- Always follow the user's instructions first.
+- If there are unclear requirements, do not implement based on assumptions; instead, document clear assumptions or ask questions.
+- When the user requests code changes, always provide only the modified parts unless otherwise specified.
+- Respect the user's existing coding style and design.
+- Do not propose unnecessarily large changes at once.
+- Write code that is maintainable by humans, even if it is auto-generated.
